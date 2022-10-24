@@ -1,0 +1,7 @@
+.thumbnail-zidan {
+    background-image:url("../img/ZIDAN_LANDING.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    backdrop-filter: blur(10px);
+}
