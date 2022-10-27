@@ -1,0 +1,20 @@
+.sl1 {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("https://2.bp.blogspot.com/-7lHSt4CWtUc/XHtNU-ERPmI/AAAAAAAAeAY/lpwelddXstoclO455ST4U3qzmESc2cBsQCK4BGAYYCw/s1600/NGC6302_ButterflyNebula_NASA1024.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://2.bp.blogspot.com/-7lHSt4CWtUc/XHtNU-ERPmI/AAAAAAAAeAY/lpwelddXstoclO455ST4U3qzmESc2cBsQCK4BGAYYCw/s1600/NGC6302_ButterflyNebula_NASA1024.jpg");
+}
+
+.sl2 {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("http://4.bp.blogspot.com/-nsImx0n3ivw/VYkfOzB7uHI/AAAAAAAACO0/OVIAG3Al5Gk/s1600/2014-03-07-Exoplanet.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("http://4.bp.blogspot.com/-nsImx0n3ivw/VYkfOzB7uHI/AAAAAAAACO0/OVIAG3Al5Gk/s1600/2014-03-07-Exoplanet.jpg");
+}
+
+.sl3 {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("http://media1.s-nbcnews.com/i/MSNBC/Components/Photo/_new/130110-EinsteinPhoto-hmed-1135p_files.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("http://media1.s-nbcnews.com/i/MSNBC/Components/Photo/_new/130110-EinsteinPhoto-hmed-1135p_files.jpg");
+}
+
+.sl4 {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("https://cdn.mos.cms.futurecdn.net/xJhfbnbd8nXCxdeiyzDKJH-1200-80.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://cdn.mos.cms.futurecdn.net/xJhfbnbd8nXCxdeiyzDKJH-1200-80.jpg");
+}
+/*# sourceMappingURL=about.css.map */

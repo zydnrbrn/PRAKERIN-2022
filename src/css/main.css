@@ -5,3 +5,31 @@
     background-repeat:no-repeat;
     backdrop-filter: blur(10px);
 }
+.thumbnail-lukman {
+    background-image:url("../img/bubur_lukman_thumbnail.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    backdrop-filter: blur(10px);
+}
+.thumbnail-yanto {
+    background-image:url("../img/marmis_thmb.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    backdrop-filter: blur(10px);
+}
+.thumbnail-risma {
+    background-image:url("../img/risma_thmb.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    backdrop-filter: blur(10px);
+}
+.thumbnail-adi {
+    background-image:url("../img/adi_thmb.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    backdrop-filter: blur(10px);
+}

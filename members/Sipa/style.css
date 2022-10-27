@@ -1,0 +1,75 @@
+.kotak {
+    width:300px;
+    height:400px;
+    background-color: #72B752 ;
+    margin-left: 560px;
+    margin-top: 50px;
+    border-radius: 35px;
+    margin-top: 30px;
+}
+
+.navbar-nav {
+    background-color: ;
+  
+   
+}
+.navbar-light {
+  background-color: #FFFFFF;
+  
+}
+
+
+   .btn .btn-primary {
+       margin-top: 10px;
+   }
+    
+
+.gambar{
+   background-color: #DDDDDD;
+     width: 400px;
+     height: 446px;
+     background-repeat: no-repeat;
+     margin: 30px;
+     padding-right: 30px;
+}
+
+.accordion {
+    margin: 30px;
+    
+}
+
+.jumbotron {
+    background-image: url('assets/heal');
+      background-size: cover;
+     background-repeat: no-repeat;
+     margin: 35px;
+     padding-right: 35px;
+    
+     
+}
+
+.display-4 {
+    font-family: Sans-Serif ;
+    color: #919C86;
+  
+   
+}
+
+.aplikasi {
+    height: 45px;
+	width: 45px;
+
+}
+
+.gambar2 {
+  
+    padding-top: 40px;
+    text-align: center;
+    
+}
+
+
+
+
+
+
