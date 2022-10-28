@@ -33,3 +33,10 @@
     background-repeat:no-repeat;
     backdrop-filter: blur(10px);
 }
+.thumbnail-haifa {
+    background-image:url("../img/haifa_thmb.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    backdrop-filter: blur(10px);
+}
