@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZH | ZYDN HARDWARE : Semua Kebutuhan Computer-mu Ada Disini !</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<style>
+
+html, .form-control {
+     font-family: 'Titillium Web', sans-serif;
+}
+ h1 {
+    font-family: 'Titillium Web', sans-serif;
+    color:#532D7C;
+    font-weight: bold;
+}
+.btn {
+    background-color:#532D7C;
+}
+.text-header, .imgutama {
+     margin-top:100px;
+}
+.service, .choose-us {
+    background-color:#532D7C;
+    border-radius:25px;
+}
+h2, p {
+    color:white;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.service2 {
+    margin-top:100px !important;
+}
+.active:hover {
+    color:white;
+}
+.navbar {
+    border-bottom-left-radius:25px;
+    border-bottom-right-radius:25px;
+}
+.choose {
+    border-radius:25px;
+    text-align:center;
+}
+.bi {
+    color:white;
+    width:100px;
+    height:100px;
+    font-size:50px;
+}
+.bi, .choose-text {
+        margin-top:10px;
+}
+
+.card{
+    border:none;
+
+    position:relative;
+    overflow:hidden;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.card:before{
+    
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background-color:#E1BEE7;
+    transform:scaleY(1);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+
+.card:after{
+    
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background-color:#532D7C;
+    transform:scaleY(0);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+
+.card:hover::after{
+    transform:scaleY(1);
+}
+
+
+.fonts{
+    font-size:11px;
+}
+
+.social-list{
+    display:flex;
+    list-style:none;
+    justify-content:center;
+    padding:0;
+}
+
+.social-list li{
+    padding:10px;
+    color:#532D7C;
+    font-size:19px;
+}
+
+
+.buttons button:nth-child(1){
+       border:1px solid #532D7C !important;
+       color:#fff;
+       height:40px;
+}
+
+.buttons button:nth-child(1):hover{
+       border:1px solid #532D7C !important;
+       color:#532D7C;
+       height:40px;
+}
+
+.buttons button:nth-child(2){
+       border:1px solid #532D7C !important;
+       background-color:#532D7C;
+       color:#fff;
+        height:40px;
+}
+.t-text {
+    font-family: 'Titillium Web', sans-serif;
+    color:black;
+}
+.discuss-text {
+      font-family: 'Titillium Web', sans-serif;
+    color:black;
+}
+
+.discussion {
+    margin-top:50px;
+}
+.text-address {
+      font-family: 'Titillium Web', sans-serif;
+    color:black;
+}
+.apah {
+    margin-top:100px !important;
+   
+}
+.mt-5 {
+    margin-top:100px !important;
+}
+.text-main {
+    margin-top:100px !important;
+}
+.button-atas button:nth-child(1){
+       border:1px solid #532D7C !important;
+       color:#fff;
+       height:40px;
+}
+
+.button-atas button:nth-child(1):hover{
+       border:1px solid black !important;
+       color:black;
+       height:40px;
+}
+
+.button-atas button:nth-child(2){
+       border:1px solid #532D7C !important;
+       background-color:#532D7C;
+       color:#fff;
+        height:40px;
+}
+.btn-top a:nth-child(1){
+       border:1px solid #532D7C !important;
+       color:#fff;
+       height:40px;
+}
+
+.btn-top a:nth-child(1):hover{
+       border:1px solid #532D7C !important;
+       color:#532D7C;
+       height:40px;
+       background-color:#fff;
+}
+
+.btn-top a:nth-child(2){
+       border:1px solid #532D7C !important;
+       background-color:#532D7C;
+       color:#fff;
+        height:40px;
+}
+.tombol-search button {
+    border:1px solid #532D7C !important;
+       color:#532D7C;
+       height:40px;
+}
+.tombol-search button:hover {
+         border:1px solid #532D7C !important;
+       color:#fff;
+       height:40px;
+       background-color:#532D7C;
+}
+
+.modal-footer button {
+     border:1px solid #532D7C !important;
+       color:white;
+       height:40px;
+       background-color:#532D7C;
+}
+.modal-footer button:hover {
+       border:1px solid #532D7C !important;
+       color:black;
+       height:40px;
+       background-color:white;
+}
+.modal-tombol button {
+     border:1px solid #532D7C !important;
+       color:white;
+       height:40px;
+       background-color:#532D7C;
+}
+.modal-tombol button:hover {
+       border:1px solid #532D7C !important;
+       color:black;
+       height:40px;
+       background-color:white;
+}
+.text-modal {
+     font-family: 'Titillium Web', sans-serif;
+    color:black;
+    font-weight: bold;
+}
+
+.fw-bold {
+     font-family: 'Titillium Web', sans-serif;
+}
+.card-footer button {
+     border:1px solid #532D7C !important;
+       color:white;
+       height:40px;
+       background-color:#532D7C;
+}
+.card-footer button:hover {
+       border:1px solid #532D7C !important;
+       color:black;
+       height:40px;
+       background-color:white;
+}
+
+.input-group-append button {
+     border:1px solid #532D7C !important;
+       color:white;
+       height:40px;
+       background-color:#532D7C;
+}
+.input-group-append button:hover {
+       border:1px solid #532D7C !important;
+       color:black;
+       height:40px;
+       background-color:white;
+}
+.card-footer button {
+     border:1px solid #532D7C !important;
+       color:white;
+       height:40px;
+       background-color:#532D7C;
+}
+.card-footer button:hover {
+       border:1px solid #532D7C !important;
+       color:black;
+       height:40px;
+       background-color:white;
+}
+.buy button {
+  solid #532D7C !important;
+       color:white;
+       background-color:#532D7C;
+}
+.buy button:hover {
+       border:1px solid #532D7C !important;
+       color:black;
+       background-color:white;
+}
+.navbar-nav h4 {
+       color:black;
+       
+       height:40px;
+}
+.navbar-nav h4:hover {
+       color:#532D7C;
+       height:40px;
+}
+
+.form-beli button {
+  solid #532D7C !important;
+       color:white;
+       background-color:#532D7C;
+}
+.form-beli button:hover {
+       border:1px solid #532D7C !important;
+       color:black;
+       background-color:white;
+}
+
+.slide-left {
+	-webkit-animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+
+
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" class="img-fluid" width="150px" height="150px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbar-list" id="navbarSupportedContent" x-data="{ items: ['Home', 'Service', 'About', 'Contact'] get searchResults () {
+    return this.items.filter(
+        a => a.startsWith(this.search)
+    )
+} }">
+            <ul class="navbar-nav ms-auto">
+                
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home"><h4 class="fw-bold text-nav">Home</h4></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#service"><h4 class="fw-bold text-nav">Service</h4></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#about"><h4 class="fw-bold text-nav">About</h4></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#footer"><h4 class="fw-bold text-nav">Contact</h4></a>
+                </li>
+                
+    	<!-- Search input -->
+    	<input type="search" class="form-control" placeholder="Cari Disini ..." >
+    	
+    <!-- List items -->
+      
+          <template x-for="item in searchResults">
+            <li class="list-group-item" x-text="item"></li>
+          </template>
+            </ul>
+        </div>
+      </div>
+    </nav>
+ <div class="row">
+ <div class="container">
+    
+         <div class="col-md-12 header-atas" id="home">
+             
+             <div class="col-md-6 float-start header-kiri mt-5" >
+                  <h1 class="fw-bold text-header text-main"  style="margin-top:100px;" onload="anime" id="maintext">Semua Kebutuhan <br> Computer-mu Ada Disini.</h1>
+                  <div class="button-atas">
+                  <button data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="btn fw-bold"> <i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+                  </div>
+             </div>
+             <div class="col-md-6 float-end header-kanan slide-left">
+                 <img class="img-fluid imgutama " src="img/hero-img.png">
+                 </div>
+         </div>
+
+     </div>
+     <div class="col-md-12 service text-start" width="auto" height="auto"  id="service">
+          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col-md-6 d-flex align-items-start">
+        <div class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        <img class="img-fluid" width="50px" height="50px" src="img/pcicons.png">    
+        </div>
+        <div>
+          <h2>PC Diagnostics</h2>
+          <p>Kami dapat mendiagnosis masalah terkait komputer dan menyelesaikannya dengan cepat.</p>
+        </div>
+      </div>
+      <div class="col-md-6 d-flex align-items-start">
+        <div class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <img class="img-fluid" width="50px" height="50px" src="img/bugs.png">
+        </div>
+        <div>
+          <h2>Removing Virus</h2>
+          <p>Bila Anda memerlukan layanan penghapusan virus yang dijamin dan terjangkau, jangan ragu untuk menghubungi kami!</p>
+         
+        </div>
+      </div>
+    </div>
+     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col-md-6 d-flex align-items-start">
+        <div class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        <img class="img-fluid" width="50px" height="50px" src="img/basket.png">    
+        </div>
+        <div>
+          <h2>Hardware Solutions</h2>
+          <p>Kami menyediakan Hardware Favorit Anda Disini.</p>
+        </div>
+      </div>
+      <div class="col-md-6 d-flex align-items-start">
+        <div class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <img class="img-fluid" width="50px" height="50px" src="img/install.png">
+        </div>
+        <div>
+          <h2>Setup & Install</h2>
+          <p>Butuh layanan pemasangan & instalasi perangkat lunak PC profesional? Kami di sini untuk membantu Anda!</p>
+         
+        </div>
+      </div>
+    </div>
+     </div>
+     <!--CAROUSEL START-->
+       <h1 class="h1 fw-bold text-center mt-5 mb-5 apah">APA YANG KAMI SEDIAKAN</h1>
+     <div class="col-md-12 service2" >
+        
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+         
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="img/intel.png" class=" img-fluid d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="h5 text-white fw-bold">Intel Processor</h5>
+        <p class="text-white fw-bold">Tersedia Processor Intel dari Gen 5th+ </p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="img/manukers.png" class="img-fluid d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="h5 text-white fw-bold">Aorus Motherboard</h5>
+        <p class="text-white fw-bold">Tersedia Motherboard Gaming dan Moterboard biasa.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/ssd_samsung.png" class="img-fluid d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="h5 text-white fw-bold">Solid State Drive (SSD)</h5>
+        <p class="text-white fw-bold">Tersedia SSD Samsung dan beberapa type dari brand lain.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+     </div>
+
+     <!--CAROUSEL END-->
+     <!--TOP-PRODUCT START-->
+     <div class="col-md-12 service3 text-center">
+         <h1 class="h1 fw-bold text-center mt-5 mb-5">TOP PRODUCTS</h1>
+           <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;"> <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+              <div class="col">
+                   <div class="card h-100 shadow-sm">
+                        <img src="img/i3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                             <div class="clearfix mb-3">
+                                  <span class="float-start badge rounded-pill bg-primary">PROCESSOR INTEL CORE I3 2100 TRAY LGA SOCKET 1155</span>
+                                  <span class="float-end price-hp">Rp201.500</span> </div> 
+                                  <h5 class="card-title">Nama Kode : Sandy Bridge<br>
+                                    Number of Cores : 2<br>
+                                    
+                                    Number of Threads: 4<br>
+                                    
+                                    Thermal Design Power (TDP) : 65 W<br>
+                                    
+                                    Kecepatan Bus : 5 GT/s<br>
+                                    
+                                    Cache Memory Details : Smart Cache - 3 MB</h5> 
+                                  <div class="text-center my-4 btn-top">
+                                       <a href="https://www.tokopedia.com/zydn-hardware/product"  data-bs-toggle="modal" data-bs-target="#exampleModal"  class="btn btn-outline-primary">Check offer</a>
+                                       </div> 
+                                       </div> 
+                                       </div> 
+                                       </div>
+                                        <div class="col">
+                   <div class="card h-100 shadow-sm">
+                        <img src="img/mobo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                             <div class="clearfix mb-3">
+                                  <span class="float-start badge rounded-pill bg-primary">GIGABYTE GA-H61M-S1 Desktop Motherboard H61 Socket LGA 1155</span>
+                                  <span class="float-end price-hp">Rp846.000</span> </div> 
+                                  <h5 class="card-title">Brand Name : Gigabyte<br>
+                                    Socket Type : Socket 1155<br>
+                                    Item Condition : Used<br>
+                                    Ports : PCI-Express X16<br>
+                                    Ports : PS2<br>
+                                    Ports : SATA<br>
+                                    Ports : PCI-Express X1<br>
+                                    Ports : Ethernet<br>
+                                    Ports : USB 2.0<br>
+                                    Ports : VGA<br>
+                                    Memory Type : DDR3<br>
+                                    Application : Desktop<br>
+                                    Chipset : Intel H61<br>
+                                    Memory channel : Double<br>
+                                    CPU Type : Intel<br>
+                                    FSB / HT : Mhz<br>
+                                    Graphics Card Type : Integrated<br>
+                                    Form Factor : u ATX<br>
+                                    Package : No<br>
+                                    Memory Bank : 2 DDR3 DIMM<br>
+                                    With CPU : No<br>
+                                    Model Number : GA-H61M-DS1<br>
+                                    Maximum Ram Capacity : 16 GB<br>
+                                    Hard Drive Interface : SATA<br>
+                                    Chipset Manufacturer : Intel</h5> 
+                                  <div class="text-center my-4 btn-top">
+                                       <a href="https://www.tokopedia.com/zydn-hardware/product" data-bs-toggle="modal" data-bs-target="#exampleModal"  class="btn btn-outline-primary">Check offer</a>
+                                       </div> 
+                                       </div> 
+                                       </div> 
+                                       </div>
+                                        <div class="col">
+                   <div class="card h-100 shadow-sm">
+                        <img src="img/hdd.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                             <div class="clearfix mb-3">
+                                  <span class="float-start badge rounded-pill bg-primary">HDD WD Green Sata 500GB 5200RPM</span>
+                                  <span class="float-end price-hp">Rp195.000</span> </div> 
+                                  <h5 class="card-title">* Barracuda series<br>
+                                    * Capacity - 500GB<br>
+                                    * Speed - 5900RPM<br>
+                                    * Connectivity - SATA III<br>
+                                    * Size - 3.5"<br>
+                                    * For PC
+                                    </h5> 
+                                  <div class="text-center my-4 btn-top">
+                                       <a href="https://www.tokopedia.com/zydn-hardware/product" data-bs-toggle="modal" data-bs-target="#exampleModal"  class="btn btn-outline-primary">Check offer</a>
+                                       </div> 
+                                       </div> 
+                                       </div> 
+                                       </div>
+                                        <div class="col">
+                   <div class="card h-100 shadow-sm">
+                        <img src="img/rtx.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                             <div class="clearfix mb-3">
+                                  <span class="float-start badge rounded-pill bg-primary">MSi RTX 3080Ti RTX 3080 TI Gaming X Trio 12GB GDDR6X</span>
+                                  <span class="float-end price-hp">Rp 39.000.000</span> </div> 
+                                  <h5 class="card-title">Model Name GeForce RTX™ 3080 Ti GAMING X TRIO 12G<br>
+                                Cores 10240 Units<br>
+                                Memory 12GB GDDR6X<br>
+                                Graphics Processing Unit NVIDIA®<br>
+                                GeForce RTX™ 3080 Ti<br>
+                                G-SYNC™ technology Y<br>
+                                Interface PCI Express®<br>
+                                Gen 4<br>
+                                Adaptive Vertical Sync Y<br>
+                                Boost / Base Core Clock Boost: 1770 MHz<br>
+                                Memory Interface 384-bit<br>
+                                Memory Clock Speed (MHz) 19 Gbps<br>
+                                Output<br>
+                                DisplayPort x 3 (v1.4)<br>
+                                HDMI x 1 (Supports 4K@120Hz as specified<br>
+                                in HDMI 2.1)<br>
+                                Digital Maximum Resolution 7680x4320<br>
+                                Virtual Reality Ready Y<br>
+                                Maximum Displays 4<br>
+                                HDCP Support Y<br>
+                                DirectX Version Support 12 API<br>
+                                OpenGL Version Support 4.6<br>
+                                Card Dimension(mm) 324 x 140 x 56mm<br>
+                                Card Weight (g) 1572 g / 2356 g<br>
+                                Power consumption (W) 350W<br>
+                                Recommended PSU (W) 750w<br>
+                                Power Connectors 8-pin x 3  </h5> 
+                                  <div class="text-center my-4 btn-top">
+                                       <a href="https://www.tokopedia.com/zydn-hardware/product" data-bs-toggle="modal" data-bs-target="#exampleModal"  class="btn btn-outline-primary">Check offer</a>
+                                       </div> 
+                                       </div> 
+                                       </div> 
+                                       </div>
+                                       </div>
+                                       </div>
+        </div>
+     <!--TOP-PRODUCT END-->
+     <!--CHOOSE US START-->
+     <div class="col-md-12 shadow" id="about">
+           <h1 class="h1 fw-bold mt-5 mb-5 text-center">ALASAN KENAPA PILIH KAMI</h1>
+             <div class="col-md-12 text-center choose-us" width="auto" height="auto">
+                 <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start choose">
+        <div class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+         <i class="bi bi-shield-fill-check" ></i>
+        </div>
+        <div class="choose-text">
+          <h2>Kualitas Terjamin</h2>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start choose">
+        <div class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        <i class="bi bi-bag-check-fill"></i>
+        </div>
+        <div class="choose-text">
+          <h2>Garansi Resmi & Toko</h2>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start choose">
+        <div class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        <i class="bi bi-check-circle-fill"></i>
+        </div>
+        <div class="choose-text">
+          <h2>Original</h2>
+        </div>
+      </div>
+    </div>
+         
+     </div>
+     <!--CHOOSE US END-->
+     <!--TESTIMONI START-->
+     <div class="col-md-12" >
+         <h1 class="h1 fw-bold mt-5 mb-5">TESTIMONI DARI PELANGGAN</h1>
+         <div class="col-md-10">
+            <p class="t-text">Awalnya saya ragu untuk belanja di toko ini,tetapi setelah saya coba,memang toko ini yang terbaik...segala aspek dari garansi,kualitas,dan keaslian barang tidak mengecewakan.</p>
+             
+         </div>
+        <div class="col-md-12 float-start">
+            <div class="container mt-5">
+    
+    <div class="row d-flex justify-content-center">
+        
+        <div class="col-md-7">
+            
+            <div class="card p-3 py-4">
+                
+                <div class="text-center">
+                    <img src="img/logouser.jpg" width="100" class="rounded-circle">
+                </div>
+                
+                <div class="text-center mt-3">
+                    <h5 class="mt-2 mb-0">Zee-&</h5>
+                    <span>Gamer/Youtuber</span>
+                    
+                    
+                    
+                </div>
+                
+               
+                
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+</div>
+        </div>
+         
+         
+     </div>
+     <!--TESTIMOI END-->
+     <!--DISCUSSION START-->
+     <div class="col-md-12 discussion">
+          <h1 class="h1 fw-bold mt-5 mb-5 text-center">YUK DISKUSI DENGAN KAMI</h1>
+         <div class="container-fluid mt-100">
+     <div class="row">
+         <div class="col-md-12">
+             <div class="card mb-4">
+                 <div class="card-header">
+                     <div class="media flex-wrap w-100 align-items-center"> <img src="img/user.jpg" width="50px" height="50px" class="d-block ui-w-40 rounded-circle" alt="">
+                         <div class="media-body ml-3"> <a href="#service" data-abc="true">Zidan Khulul Sazid</a>
+                             <div class="text-muted small">1 days ago</div>
+                         </div>
+                         <div class="text-muted small ml-3">
+                             <div>Member since <strong>01/1/2019</strong></div>
+                             <div><strong>1</strong> posts</div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="card-body">
+                    <p class="discuss-text">Hey menurut kalian website ini bagaimana? kalo ada saran hubungi dev nya ya ! :D</p>
+                 </div>
+                 <div class="card-footer d-flex flex-wrap justify-content-between align-items-center px-0 pt-0 pb-3">
+                     <div class="px-4 pt-3"> <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle" data-abc="true"> <i class="fa fa-heart text-danger"></i>&nbsp; <span class="align-middle">445</span> </a> <span class="text-muted d-inline-flex align-items-center align-middle ml-4"> <i class="fa fa-eye text-muted fsize-3"></i>&nbsp; <span class="align-middle">14532</span> </span> </div>
+                     <div class="px-4 pt-3"> <button type="button" class="btn btn-primary"><i class="ion ion-md-create"></i>&nbsp; Reply</button> </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+     </div>
+     <!--DISCUSSION END-->
+          <!--BUY START-->
+     <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+    <div class="row align-items-center g-lg-5 py-5">
+      <div class="col-lg-7 text-center text-lg-start">
+        <h1 class="display-4 fw-bold lh-1 mb-3">Isi form ini untuk memesan produk kami !</h1>
+      </div>
+      <div class="col-md-10 mx-auto col-lg-5">
+        <form class="form-beli p-4 p-md-5 border rounded-3 bg-light">
+            <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingNama">Nama</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPesan">Pesan</label>
+          </div>
+          <button class="w-100 btn btn-lg" type="submit">Pesan Sekarang !</button>
+          <hr class="my-4">
+          <small class="text-muted">By clicking Pesan Sekarang !, you agree to the terms of use.</small>
+        </form>
+      </div>
+    </div>
+  </div>
+     <!--BUY END-->
+     <!--ADRESS START-->
+     <div class="col-md-12">
+     <div class="col">
+         <h1 class="h1 fw-bold mt-5 mb-5 text-center">LOKASI KAMI</h1><br>
+         <p class="text-address fw-bold">Desa Bunijaya <br>Kec Gununghalu <br>Kab Bandung Barat <br> Prov Jawa Barat
+         </p>
+         
+     </div>
+     <div class="col">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.9475892278715!2d107.2639023!3d-7.015446600000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6858c8f9b9c493%3A0x5b9e1c422407e7f0!2sGunungn%20Halu%20Jl.%20Desa%20Bunijaya%2C%20Bunijaya%2C%20Kec.%20Gununghalu%2C%20Kabupaten%20Bandung%20Barat%2C%20Jawa%20Barat!5e0!3m2!1sen!2sid!4v1660622075992!5m2!1sen!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </div>
+     </div>
+     <!--ADRESS END-->
+ </div>
+ </div>
+
+            <!-- my profle -->
+      <div class="col-md-12 text-start">
+          <h1 class="h1 fw-bold mt-5 mb-5 text-center" >DEV PROFILE</h1><br>
+        <div class="container mt-5">
+<div class="row d-flex justify-content-center">
+    <div class="col-md-7">
+        <div class="card p-3 py-4">
+            <div class="text-center">
+                <img src="img/user.jpg" width="100" class="rounded-circle">
+            </div>
+            <div class="text-center mt-3">
+                <span class="bg-secondary p-1 px-4 rounded text-white">Dev</span>
+                <h5 class="mt-2 mb-0">Zidan Khulul Sazid</h5>
+                <span>Frontend Developer</span>
+                 <ul class="social-list">
+                    <li><i class="fa fa-facebook"><a href="https://www.facebook.com/zidan.k.s/"></a></i></li>
+                    <li><i class="fa fa-instagram"><a href=""></a></i></li>
+                    <li><i class="fa fa-whatsapp"><a href=""></a></i></li>
+                </ul>
+                <div class="buttons">
+                    <button class="btn btn-outline-primary px-4">Message</button>
+                    <button class="btn btn-primary px-4 ms-3">Contact</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+    </div>
+  
+
+       <!--FOOTER-->
+<div class="container" id="footer">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-muted">&copy; 2022 zydnrbrn</span>
+    </div>
+  </footer>
+    <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="exampleModalLabel">Belanja Sekarang !</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <p class="text-modal">Pemesanan bisa melalui direct BCA/Bank Lain.</p>
+  <p class="text-modal">Isi Nama,Email & Pesan Anda.</p>
+  <p class="text-modal">Atau Melalui E-commerce/Marketplace dibawah.</p>
+          
+     <!-- Nama input -->
+  <div class="form-outline mb-4">
+    <input type="text" id="form2Example2" class="form-control" />
+    <label class="form-text" for="form2Example2">Nama</label>
+  </div>
+            
+     <!-- Email input -->
+  <div class="form-outline mb-4">
+    <input type="email" id="form2Example1" class="form-control" />
+    <label class="form-label" for="form2Example1">Email address</label>
+  </div>
+
+  <!-- Pesan input -->
+  <div class="form-outline mb-4">
+    <input type="text" id="form2Example2" class="form-control" />
+    <label class="form-text" for="form2Example2">Pesan</label>
+  </div>
+
+  <!-- 2 column grid layout for inline styling -->
+  <div class="row mb-4 modal-tombol">
+    <div class="col d-flex justify-content-center">
+  </div>
+
+  <!-- Submit button -->
+  <button type="submit" class="btn btn-primary btn-block mb-4">Kirim   <i class="fa-solid fa-paper-plane"></i></i></button>
+
+  <!-- Register buttons -->
+  <div class="text-center">
+    <button type="button" class="btn btn-primary btn-floating mx-1">
+      <i class="fab fa-facebook-f"></i>
+    </button>
+
+    <button type="button" class="btn btn-primary btn-floating mx-1">
+      <i class="fab fa-instagram"></i>
+    </button>
+
+    <button type="button" class="btn btn-primary btn-floating mx-1">
+     <i class="fa-solid fa-link"></i>
+    </button>
+  </div>
+</form>
+      </div>
+      <div class="modal-footer" >
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+      <!-- end -->
+</div>
+      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+      <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/32a7939dce.js" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js"></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</html>
